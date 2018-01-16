@@ -9,49 +9,65 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.londonappbrewery.destini.MainActivity"
-    android:background="@drawable/background">
+    android:background="@drawable/background_orange">
 
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:paddingTop="50dp">
 
-    <TextView
-        android:id="@+id/storyTextView"
-        android:text="@string/T1_Story"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:textSize="24sp"
-        android:textColor="#ffffffff"/>
+        <TextView
+            android:id="@+id/storyTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:fontFamily="serif"
+            android:lineSpacingExtra="2dp"
+            android:text="@string/T1_Story"
+            android:textAlignment="center"
+            android:textColor="#ffffffff"
+            android:textSize="17dp" />
+    </RelativeLayout>
 
-    <Button
-        android:id="@+id/buttonTop"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/T1_Ans1"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="61dp"
-        android:background="#e74c3c"
-        android:textColor="#ecf0f1"
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:textSize="15sp"/>
+        android:layout_alignParentBottom="true">
 
-    <Button
-        android:id="@+id/buttonBottom"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/T1_Ans2"
-        android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/buttonTop"
-        android:layout_alignStart="@+id/buttonTop"
-        android:layout_alignRight="@+id/buttonTop"
-        android:layout_alignEnd="@+id/buttonTop"
-        android:background="#3498db"
-        android:textColor="#ecf0f1"
-        android:textSize="15sp"/>
+        <Button
+            android:id="@+id/buttonTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="61dp"
+            android:background="#FAFAFA"
+            android:text="@string/T1_Ans1"
+            android:textColor="#333333"
+            android:textSize="@dimen/btn_font_size"
+            android:textStyle="bold" />
 
+        <Button
+            android:id="@+id/buttonBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/buttonTop"
+            android:layout_alignLeft="@+id/buttonTop"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/buttonTop"
+            android:layout_alignStart="@+id/buttonTop"
+            android:background="#BF360C"
+            android:text="@string/T1_Ans2"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/btn_font_size"
+            android:textStyle="bold" />
+    </RelativeLayout>
 
 
 </RelativeLayout>
